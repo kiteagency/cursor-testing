@@ -1,0 +1,13 @@
+{
+  "name": "kite-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "functions"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace apps/web",
+    "dev:functions": "npm run serve --workspace functions",
+    "build": "npm run build -ws"
+  }
+}
